@@ -2,98 +2,113 @@
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
-<title>CV - Châu Nguyễn Trọng Hiếu</title>
+<title>Portfolio | Châu Nguyễn Trọng Hiếu</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family: "Segoe UI", sans-serif;
+    font-family:'Poppins',sans-serif;
 }
 body{
-    background:#f3f6fa;
+    background:#0f172a;
+    color:white;
 }
 .container{
-    max-width:1100px;
-    margin:40px auto;
-    background:white;
-    display:grid;
-    grid-template-columns: 320px 1fr;
-    box-shadow:0 10px 30px rgba(0,0,0,0.1);
-    border-radius:12px;
-    overflow:hidden;
+    max-width:1200px;
+    margin:auto;
+    padding:40px 20px;
 }
 
-/* LEFT */
-.left{
-    background:linear-gradient(180deg,#1e3c72,#2a5298);
+/* HEADER */
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:50px;
+}
+.logo{
+    font-size:26px;
+    font-weight:600;
+    color:#38bdf8;
+}
+.nav a{
     color:white;
-    padding:30px;
-}
-.avatar{
-    width:140px;
-    height:140px;
-    border-radius:50%;
-    background:#fff;
-    margin:0 auto 20px;
-}
-.left h2{
-    text-align:center;
-    margin-bottom:5px;
-}
-.left p{
-    text-align:center;
-    opacity:0.9;
-}
-.section{
-    margin-top:25px;
-}
-.section h3{
-    font-size:16px;
-    border-bottom:1px solid rgba(255,255,255,0.4);
-    padding-bottom:6px;
-    margin-bottom:10px;
-}
-.section ul{
-    list-style:none;
-}
-.section ul li{
-    font-size:14px;
-    margin-bottom:6px;
-}
-
-/* RIGHT */
-.right{
-    padding:35px;
-}
-.right h1{
-    font-size:30px;
-    color:#2a5298;
-}
-.title{
-    font-size:18px;
-    margin-bottom:20px;
-    color:#555;
-}
-.block{
-    margin-bottom:25px;
-}
-.block h3{
-    color:#2a5298;
-    margin-bottom:8px;
-}
-.block p, .block li{
-    color:#555;
+    margin-left:25px;
+    text-decoration:none;
     font-size:15px;
-    line-height:1.6;
+    transition:0.3s;
+}
+.nav a:hover{
+    color:#38bdf8;
 }
 
-.tags span{
-    background:#2a5298;
-    color:white;
-    padding:6px 12px;
+/* HERO */
+.hero{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    gap:40px;
+}
+.hero-text h1{
+    font-size:48px;
+    line-height:1.2;
+}
+.hero-text span{
+    color:#38bdf8;
+}
+.hero-text p{
+    margin:20px 0;
+    color:#cbd5f5;
+    line-height:1.7;
+}
+.btn{
+    background:#38bdf8;
+    color:#0f172a;
+    padding:12px 25px;
+    border-radius:30px;
+    display:inline-block;
+    margin-top:15px;
+    text-decoration:none;
+    font-weight:600;
+}
+
+/* CARD */
+.card{
+    background:#1e293b;
+    padding:25px;
+    border-radius:16px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* GRID */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+    margin-top:60px;
+}
+
+/* TITLE */
+.section-title{
+    text-align:center;
+    margin-top:80px;
+    margin-bottom:30px;
+}
+.section-title h2{
+    font-size:34px;
+    color:#38bdf8;
+}
+
+/* TAG */
+.tag span{
+    background:#38bdf8;
+    color:#0f172a;
+    padding:6px 14px;
     border-radius:20px;
     font-size:13px;
     margin:5px;
@@ -106,93 +121,79 @@ body{
 
 <div class="container">
 
-<!-- LEFT -->
-<div class="left">
-    <div class="avatar"></div>
-
-    <h2>CHÂU NGUYỄN TRỌNG HIẾU</h2>
-    <p>Lập trình viên</p>
-
-    <div class="section">
-        <h3>Liên hệ</h3>
-        <ul>
-            <li>📞 0814717749</li>
-            <li>📧 dorekido0123@gmail.com</li>
-            <li>📍 Cần Thơ</li>
-            <li>🌐 Facebook: Shido2810</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h3>Kỹ năng</h3>
-        <ul>
-            <li>HTML, CSS, JavaScript</li>
-            <li>C, C++, C#, Java</li>
-            <li>GitHub</li>
-            <li>Word, Excel, PowerPoint</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h3>Sở thích</h3>
-        <ul>
-            <li>Thể thao</li>
-            <li>Đọc sách công nghệ</li>
-            <li>Game</li>
-            <li>Học lập trình</li>
-        </ul>
+<!-- HEADER -->
+<div class="header">
+    <div class="logo">Hiếu.dev</div>
+    <div class="nav">
+        <a href="#">Trang chủ</a>
+        <a href="#">Giới thiệu</a>
+        <a href="#">Kỹ năng</a>
+        <a href="#">Liên hệ</a>
     </div>
 </div>
 
-<!-- RIGHT -->
-<div class="right">
+<!-- HERO -->
+<div class="hero">
 
-    <h1>Hồ Sơ Cá Nhân</h1>
-    <p class="title">Sinh viên Công Nghệ Thông Tin</p>
-
-    <div class="block">
-        <h3>Mục tiêu nghề nghiệp</h3>
+    <div class="hero-text">
+        <h1>Xin chào, tôi là <span>Châu Nguyễn Trọng Hiếu</span></h1>
         <p>
-        Trở thành chuyên gia phát triển phần mềm, tạo ra các sản phẩm công nghệ
-        sáng tạo, mang lại giá trị thực tiễn cho doanh nghiệp và xã hội.
+        Sinh viên CNTT đam mê lập trình, hướng tới trở thành Software Developer chuyên nghiệp.
+        Tôi mong muốn tạo ra các sản phẩm công nghệ mang giá trị thực tiễn.
         </p>
+        <a class="btn" href="#">Liên hệ tôi</a>
     </div>
 
-    <div class="block">
-        <h3>Học vấn</h3>
-        <p>Đại học Nam Cần Thơ (2022 - 2026)</p>
-        <p>Ngành Công Nghệ Thông Tin</p>
+    <div class="card">
+        <h3>Thông tin nhanh</h3>
+        <p>🎓 Đại học Nam Cần Thơ</p>
+        <p>💻 Chuyên ngành CNTT</p>
+        <p>📍 Cần Thơ</p>
+        <p>🌐 Facebook: Shido2810</p>
     </div>
 
-    <div class="block">
-        <h3>Kinh nghiệm làm việc</h3>
-        <p><b>Nhân viên bán hàng (2021 - 2022)</b></p>
-        <ul>
-            <li>Hỗ trợ tư vấn khách hàng</li>
-            <li>Viết bài quảng cáo Facebook</li>
-        </ul>
+</div>
+
+<!-- SKILLS -->
+<div class="section-title">
+    <h2>Kỹ năng</h2>
+</div>
+
+<div class="grid">
+    <div class="card">
+        <h3>Lập trình</h3>
+        <p>JavaScript, Java, C, C++, C#</p>
     </div>
 
-    <div class="block">
-        <h3>Chứng chỉ</h3>
-        <ul>
-            <li>VSTEP B1</li>
-            <li>Chứng chỉ Java</li>
-        </ul>
+    <div class="card">
+        <h3>Web</h3>
+        <p>HTML, CSS, GitHub</p>
     </div>
 
-    <div class="block">
-        <h3>Kỹ năng nổi bật</h3>
-        <div class="tags">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>Java</span>
-            <span>C++</span>
-            <span>Git</span>
-        </div>
+    <div class="card">
+        <h3>Kỹ năng mềm</h3>
+        <p>Giao tiếp, làm việc nhóm, tự học</p>
     </div>
+</div>
 
+<!-- CERT -->
+<div class="section-title">
+    <h2>Chứng chỉ</h2>
+</div>
+
+<div class="grid">
+    <div class="card">VSTEP B1</div>
+    <div class="card">Chứng chỉ Java</div>
+</div>
+
+<!-- TAGS -->
+<div class="section-title">
+    <h2>Công nghệ</h2>
+</div>
+
+<div class="tag" style="text-align:center">
+    <span>HTML</span><span>CSS</span><span>JavaScript</span>
+    <span>Java</span><span>C++</span><span>Git</span>
 </div>
 
 </div>
